@@ -64,7 +64,7 @@ class OneMessage(BaseModel):
     text: str
     html: list[str]
     hasAttachments: bool
-    attachments: list[Attachment] = None
+    attachments: any = None
     size: int
     downloadUrl: str
     createdAt: str
