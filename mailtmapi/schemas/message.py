@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from typing import Any
 
 
 class MessageFromTo(BaseModel):
@@ -64,7 +65,7 @@ class OneMessage(BaseModel):
     text: str
     html: list[str]
     hasAttachments: bool
-    attachments: any = None
+    attachments: Any = None
     size: int
     downloadUrl: str
     createdAt: str
